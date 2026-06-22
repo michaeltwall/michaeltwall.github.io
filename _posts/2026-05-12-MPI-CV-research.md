@@ -83,37 +83,36 @@ _Figure 5: The HDRI used, sourced from Poly Haven [2]. Brightness was reduced si
 In order to export two layers of the render simultaneously, Blender's Compositing was used. There, the render is exported as both the composite render and the emissive layer, the former is the complete render and the latter contains only the indication and is used for labeling. 
 
 ## Discussion
-
 <table style="width: 100%; border-collapse: collapse;">
   <tr>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_1_1.png" alt="Generated render example"></td>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_1_2.png" alt="Generated render example"></td>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_1_3.png" alt="Generated render example"></td>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_1_4.png" alt="Generated render example"></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_1_1.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(a)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_1_2.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(b)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_1_3.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(c)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_1_4.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(d)</figcaption></figure></td>
   </tr>
   <tr>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_2_1.png" alt="Generated render example"></td>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_3_1.png" alt="Generated render example"></td>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_3_2.png" alt="Generated render example"></td>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_3_3.png" alt="Generated render example"></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_2_1.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(e)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_3_1.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(f)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_3_2.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(g)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_3_3.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(h)</figcaption></figure></td>
   </tr>
   <tr>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_3_4.png" alt="Generated render example"></td>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_1.png" alt="Generated render example"></td>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_2.png" alt="Generated render example"></td>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_3.png" alt="Generated render example"></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_3_4.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(i)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_1.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(j)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_2.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(k)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_3.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(l)</figcaption></figure></td>
   </tr>
   <tr>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_4.png" alt="Generated render example"></td>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_5.png" alt="Generated render example"></td>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_5_1.png" alt="Generated render example"></td>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_1.png" alt="Generated render example"></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_4.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(m)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_5.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(n)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_5_1.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(o)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_1.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(p)</figcaption></figure></td>
   </tr>
   <tr>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_2_alt.png" alt="Generated render example"></td>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_2.png" alt="Generated render example"></td>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_3.png" alt="Generated render example"></td>
-    <td><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_4.png" alt="Generated render example"></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_2_alt.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(q)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_2.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(r)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_3.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(s)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_4.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(t)</figcaption></figure></td>
   </tr>
 </table>
 <p style="text-align: center; margin-top: 15px; font-size: 17px; color: #6d6c6c;">
