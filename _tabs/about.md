@@ -6,15 +6,14 @@ order: 2
 toc: true   #this also dont work
 ---
 
-Hi! I'm Michael Wall, an Electrical Engineering student at Purdue University. I'm passionite about pushing the limits of my field and myself, and love working with other people. I enjoy working in extracurricular engineering teams and research groups, as well as conducting personal projects.
+![Band Image](/assets/posts/MPI-CV-research/Figures/renders/ind_noise_comp_combined.png){: width="550" }
 
 ---
 
+Hi! I'm Michael Wall, an Electrical Engineering student at Purdue University. I am a researcher, designer, problem solver, and leader.
 
-## My Values
+Currently, I am doing chip design with Purdue [SoCET](https://engineering.purdue.edu/SoC-Team) (System-on-Chip Extension Technologies), and am studying ASIC design and semiconductor manufacturing.
 
-For me, engineering is all about pushing boundaries - finding out what I'm capable of, and finding joy in every aspect of it. I'm drawn to challenges - every obstacle provides an opportunity for growth, and I genuinely enjoy pushing myself.
+Outside of engineering, I play piano in the Purdue Jazz Band and enjoy going on trips with the Purdue Outing Club. I also enjoy playing basketball, swimming, and weightlifting.
 
-Outside of engineering, I play piano in the Purdue Jazz Band and enjoy going on trips with the Purdue Outing Club.
-
-### Have any questions? Reach out at [michaeltwall@icloud.com](mailto:michaeltwall@icloud.com)! I'd love to hear from you.
+### Questions? Reach out at [michaeltwall@icloud.com](mailto:michaeltwall@icloud.com), I'd love to hear from you.
