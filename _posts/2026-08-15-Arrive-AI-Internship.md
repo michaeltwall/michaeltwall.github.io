@@ -8,11 +8,11 @@ categories: [Internship]
 tags: [design, PCB, power systems, hardware, manufacturing, startup]
 math: false
 image:
-  path: assets/posts/MPI-CV-research/temp-cover-image.png
+  path: assets\posts\Arrive-AI-internship\PCB_Layout_3D.png
 ---
 {% include abstract.html %}
 
-In Summer of 2026, I completed an 11-week Electrical Engineering internship at Arrive AI, Inc. Arrive AI is a ~50 person startup working on package recieving systems for autonomous delivery. 
+In Summer of 2026, I completed an 11-week Electrical Engineering internship at Arrive AI, Inc. Arrive AI is a ~50 person startup working on package recieving systems for autonomous delivery.
 
 ## Project Overview
 
