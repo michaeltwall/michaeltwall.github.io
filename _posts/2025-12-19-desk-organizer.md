@@ -15,7 +15,7 @@ Over the course of the Fall 2025 semester, I designed, manufactured, and assembl
 
 #### Individual Responsibilities:
 
-![Desktop View](assets/posts/desk-organizer/TLA_EXP_BOM.png){: .w-50 .right}
+![Desktop View](assets/posts/desk-organizer/TLA_EXP_BOM.jpg){: .w-50 .right}
 
 - Designed within manufacturing and material constraints
 - Drafted detailed engineering drawings with GD&T in Solidworks
@@ -23,7 +23,7 @@ Over the course of the Fall 2025 semester, I designed, manufactured, and assembl
 - Created CAM programs in Fusion 360 for CNC router
 - Created a final report and presentation
 
-![Desktop View](assets/posts/desk-organizer/solidworks_render.png){: .w-75 }
+![Desktop View](assets/posts/desk-organizer/solidworks_render.jpg){: .w-75 }
 _Final design rendered in SolidWorks._
 
 

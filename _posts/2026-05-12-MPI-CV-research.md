@@ -8,7 +8,7 @@ categories: [Research]
 tags: [research, computer vision, Python, Blender, publication]
 math: true
 image:
-  path: assets/posts/MPI-CV-research/temp-cover-image.png
+  path: assets/posts/MPI-CV-research/temp-cover-image.jpg
 ---
 {% include abstract.html %}
 
@@ -30,7 +30,7 @@ Blender (v5.1), a 3D rendering software, is used to simulate the virtual inspect
 * Simple customization (different parts, visual tweaks, etc.)
 
 <div style="float:left; width:400px; margin-left:-15px; margin-right:20px; margin-bottom:10px;">
-  <img src="assets/posts/MPI-CV-research/Figures/flowchart_v2.png" width="390" alt="Pipeline flowchart">
+  <img src="assets/posts/MPI-CV-research/Figures/flowchart_v2.jpg" width="390" alt="Pipeline flowchart">
   <p style="text-align: center; margin-top: 2px; font-size: 17px; color: #6d6c6c;">
     Figure 1: Flowchart for Python script.
   </p>
@@ -43,7 +43,7 @@ The entire workflow exists in a single .blend file, which contains four key part
 3. Compositor used to separate indication from image for labeling and to write renders to files
 4. Python Script used to automate entire rendering and generation process
 
-The flowchart in Figure 1 describes the function of the blender workflow. In the script, many parameters are specified; some significant parameters include: batch size, output resolution(s), minimum indication size, and maximum camera rotation along with other randomization parameters. When the script is executed, it begins by randomizing various elements of the Blender environment. The size, shape, and position of the indication are randomized through random noise nodes in the material, and the surface texture is varied in a similar way. The camera is also rotated randomly in the X, Y, and Z directions within a set range of degrees, and the HDRI background is randomly rotated around the Z axis. The render and two .png outputs are then created; one is the composite containing the full render, and the other contains only the indication.
+The flowchart in Figure 1 describes the function of the blender workflow. In the script, many parameters are specified; some significant parameters include: batch size, output resolution(s), minimum indication size, and maximum camera rotation along with other randomization parameters. When the script is executed, it begins by randomizing various elements of the Blender environment. The size, shape, and position of the indication are randomized through random noise nodes in the material, and the surface texture is varied in a similar way. The camera is also rotated randomly in the X, Y, and Z directions within a set range of degrees, and the HDRI background is randomly rotated around the Z axis. The render and two .jpg outputs are then created; one is the composite containing the full render, and the other contains only the indication.
 
 After both images are created, the image containing only the indication is checked to ensure that an indication of sufficient size is present. If the render fails, the randomization and rendering process is repeated until a successful arrangement is created. When the render succeeds, a label is then created using the indication image and saved to a .json file, then the indication image is deleted. If multiple output resolutions were entered, then the rendering and labeling process is repeated for each subsequent resolution *without* randomizing any scene elements. Once all resolutions have been rendered, the whole process is repeated for the specified batch size, and when all batches are complete, various statistics are stored in a log file along with rendering information.
 
@@ -54,11 +54,11 @@ In order to make renders as realistic as possible, many iterations were created 
 Generation of the indication was conducted first. Noise nodes in the material tree were used to create random procedural generation. Initially the Voronoi Texture Node was used, but it yielded cracks that were too straight and interconnected. The 4D Noise Texture Node yielded much better results as seen in Figure 2, but had too much variation: the indications sometimes looped around on themselves and was difficult to control the location of the indication due to the random noise. Ultimately, the Noise Texture Node was combined with a linear Gradient Texture Node, which made the indication more straight and allowed for accurate location and rotation control (Figure 3). The indication was set to be an emissive texture, causing it to slightly glow and allowing it to be separated from the composite render into an image containing only the indication used for labeling.
 
 
-![Noise comparison](/assets/posts/MPI-CV-research/Figures/renders/ind_noise_comp_combined.png){: width="550" }
+![Noise comparison](/assets/posts/MPI-CV-research/Figures/renders/ind_noise_comp_combined.jpg){: width="550" }
 _Figure 2: Comparison of Voronoi (left) and Noise (right) Texture Nodes for indication generation._
 
 
-![Noise comparison](/assets/posts/MPI-CV-research/Figures/renders/linear_comp_combined.png){: width="600" }
+![Noise comparison](/assets/posts/MPI-CV-research/Figures/renders/linear_comp_combined.jpg){: width="600" }
 _Figure 3: Indication generations without (left) and with (right) linear Gradient Texture added to Noise Texture._
 
 
@@ -73,10 +73,10 @@ The 3D part model can be any 3D model desired for rendering; in this case it is 
 
 
 
-![Noise comparison](/assets/posts/MPI-CV-research/Figures/viewport_comp_combined.png){: width="600" }
+![Noise comparison](/assets/posts/MPI-CV-research/Figures/viewport_comp_combined.jpg){: width="600" }
 _Figure 4: The 3D object in the Blender 3D viewport (left); the same 3D object with rendered textures enabled (right)._
 
-![HDRI](assets/posts/MPI-CV-research/Figures/industrial_pipe_and_valve_01_screenshot.png)
+![HDRI](assets/posts/MPI-CV-research/Figures/industrial_pipe_and_valve_01_screenshot.jpg)
 _Figure 5: The HDRI used, sourced from Poly Haven [2]. Brightness was reduced significantly in renders._
 
 
@@ -85,34 +85,34 @@ In order to export two layers of the render simultaneously, Blender's Compositin
 ## Discussion
 <table style="width: 100%; border-collapse: collapse;">
   <tr>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_1_1.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(a)</figcaption></figure></td>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_1_2.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(b)</figcaption></figure></td>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_1_3.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(c)</figcaption></figure></td>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_1_4.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(d)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_1_1.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(a)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_1_2.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(b)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_1_3.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(c)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_1_4.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(d)</figcaption></figure></td>
   </tr>
   <tr>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_2_1.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(e)</figcaption></figure></td>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_3_1.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(f)</figcaption></figure></td>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_3_2.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(g)</figcaption></figure></td>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_3_3.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(h)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_2_1.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(e)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_3_1.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(f)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_3_2.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(g)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_3_3.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(h)</figcaption></figure></td>
   </tr>
   <tr>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_3_4.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(i)</figcaption></figure></td>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_1.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(j)</figcaption></figure></td>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_2.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(k)</figcaption></figure></td>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_3.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(l)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_3_4.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(i)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_1.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(j)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_2.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(k)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_3.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(l)</figcaption></figure></td>
   </tr>
   <tr>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_4.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(m)</figcaption></figure></td>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_5.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(n)</figcaption></figure></td>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_5_1.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(o)</figcaption></figure></td>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_1.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(p)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_4.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(m)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_4_5.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(n)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_5_1.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(o)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_1.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(p)</figcaption></figure></td>
   </tr>
   <tr>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_2_alt.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(q)</figcaption></figure></td>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_2.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(r)</figcaption></figure></td>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_3.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(s)</figcaption></figure></td>
-    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_4.png" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(t)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_2_alt.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(q)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_2.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(r)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_3.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(s)</figcaption></figure></td>
+    <td><figure style="margin: 0;"><img src="assets/posts/MPI-CV-research/Figures/renders/gen_timeline/gen_6_4.jpg" alt="Generated render example" style="width: 100%;"><figcaption style="text-align: center; font-size: 14px; color: #6d6c6c;">(t)</figcaption></figure></td>
   </tr>
 </table>
 <p style="text-align: center; margin-top: 15px; font-size: 17px; color: #6d6c6c;">

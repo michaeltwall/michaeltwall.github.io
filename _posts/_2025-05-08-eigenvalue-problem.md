@@ -12,7 +12,7 @@ I used to hate math. Well, maybe *hate* isn't the best word, but I wouldn't say 
 
 This semester (Spring 2025) I was in MA 26200 - Linear Algebra and Differential Equations. I was apprehensive about entering this new realm of math -- until I discovered the YouTube channel [3 Blue 1 Brown](https://www.youtube.com/@3blue1brown) and their Intro to Linear Algebra series. After watching a couple of videos, that indifference began to transform into slight curiosity, which quickly snowballed into fascination. Their complex yet beautiful visuals explained how Linear Algebra worked on a quantitative and qualitative level, and demonstrated how abstract concepts could have very concrete meanings behind them. The previously uninteresting world of math began to seem inviting, and I started to become curious as to what else lay inside. After my MA 262 lecture on Eigenvectors and Eigenvalues, I immediately went and watched [3b1b's video](https://youtu.be/PFDu9oVAE-g?si=yKGDEsKRTnkzAhYW) on the topic. And to my surprise (and perhaps even delight), he ended the video with this challenge problem:
 
-<img src="assets/posts/eigenvalue-problem/problem.png" alt="problem image" width="650"/>
+<img src="assets/posts/eigenvalue-problem/problem.jpg" alt="problem image" width="650"/>
 
 Instinctively, I almost rejected the idea of doing a math problem what I wasn't required to do. But after reading the problem a few more times, my curiosity took over and I decided to give it a shot. How hard could it be? (spoiler alert: actually kinda hard but in a good way)
 

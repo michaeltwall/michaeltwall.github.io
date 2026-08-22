@@ -26,7 +26,7 @@ One of my key projects at the lab was designing and developing a presentation to
 
 The PI's two main requirements for this tool were ease of use and reusability; it needed to be simple to present and easy for future researchers to use with tests. To accomplish this, I utilized MATLAB App Designer to create an application for the data presentation. I designed the UI (pictured below) to feature a slider to navigate data over time and a dropdown menu to easily switch between tests. To ensure ease of use for future tests, I designed it to automatically handle a variety of data setups and process large test files just once to ensure simple operation.
 
-![Desktop View](assets/posts/SAI-R-project/app-window-1.png){: .w-75 }
+![Desktop View](assets/posts/SAI-R-project/app-window-1.jpg){: .w-75 }
 _The app featured an interactive slider to easily view photos, notes, and data from any point during the test._
 
 #### Outcomes:

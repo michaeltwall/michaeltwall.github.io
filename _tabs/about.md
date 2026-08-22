@@ -6,7 +6,7 @@ order: 2
 toc: true   #this also dont work
 ---
 
-![Band Image](/assets/posts/MPI-CV-research/Figures/renders/ind_noise_comp_combined.png){: width="550" }
+![Band Image](/assets/posts/MPI-CV-research/Figures/renders/ind_noise_comp_combined.jpg){: width="550" }
 
 ---
 

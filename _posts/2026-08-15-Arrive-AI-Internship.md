@@ -64,7 +64,7 @@ This process involved much trial and error and redesign to achieve an optimal de
 
 #### Manufacturing
 
-![Final PCB 3D render](/assets/posts/Arrive-AI-internship/PCB_3D_iso.png){: width="450"}
+![Final PCB 3D render](/assets/posts/Arrive-AI-internship/PCB_3D_iso.jpg){: width="450"}
 
 Finally, once our PCB design was validated, we were ready for manufacturing. Our chosen manufacturer was PCBWay.
 
