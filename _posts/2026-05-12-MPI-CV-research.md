@@ -8,7 +8,7 @@ categories: [Research]
 tags: [research, computer vision, Python, Blender, publication]
 math: true
 image:
-  path: assets\posts\Arrive-AI-internship\PCB_Layout.png
+  path: assets/posts/MPI-CV-research/temp-cover-image.png
 ---
 {% include abstract.html %}
 

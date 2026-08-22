@@ -8,7 +8,7 @@ categories: [Internship]
 tags: [design, PCB, power systems, hardware, manufacturing, startup]
 math: false
 image:
-  path: assets\posts\Arrive-AI-internship\PCB_Layout_3D.png
+  path: assets/posts/Arrive-AI-internship/PCB_Layout.png
 ---
 {% include abstract.html %}
 
