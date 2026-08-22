@@ -8,7 +8,7 @@ categories: [Internship]
 tags: [design, PCB, power systems, hardware, manufacturing, startup]
 math: false
 image:
-  path: assets/posts/Arrive-AI-internship/PCB_Layout.png
+  path: assets/posts/Arrive-AI-internship/PCB_Layout.jpg
 ---
 {% include abstract.html %}
 
@@ -35,13 +35,13 @@ I was responsible for the following during the duration of the project:
 
 #### Concept Design
 
-![Concept Design Flowchart](/assets/posts/Arrive-AI-internship/Block_Diagram_transparent.png){: width="450"}
+![Concept Design Flowchart](/assets/posts/Arrive-AI-internship/Block_Diagram.jpg){: width="450"}
 
 Concept design involved a flowchart with main parts chosen. We compared different buck converters from various suppliers, and chose the Texas Instruments LMR516xx synchronous buck converter due to limited external component requirement, ideal current limiting options, and high efficiency.
 
 #### Schematic Design
 
-![5V rail schematic](/assets/posts/Arrive-AI-internship/PCB_Schematic_5V_Rail.png){: width="450"}
+![5V rail schematic](/assets/posts/Arrive-AI-internship/PCB_Schematic_5V_Rail.jpg){: width="450"}
 
 Once our flowchart was verified, we began schematic design in Altium Designer. This involved research of optimal design and protection systems, and Texas Instruments' online calculators and tools were very helpful for this step.
 
@@ -51,7 +51,7 @@ After validation, we selected appropriate manufacturer parts to meet all circuit
 
 #### PCB Layout
 
-![Final PCB layout](/assets/posts/Arrive-AI-internship/PCB_Layout.png){: width="450"}
+![Final PCB layout](/assets/posts/Arrive-AI-internship/PCB_Layout.jpg){: width="450"}
 
 With our schematics verified and all components picked, we moved on to PCB layout. The following criteria were used when creating the layout:
 
