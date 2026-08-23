@@ -5,7 +5,7 @@ description: ME 26400 Design & Manufacturing Final Project
 abstract: Designed and manufactured a desk organizer project to meet strict design, manufacturing, and material constraints. Utilized CNC router, laser cutters, and woodworking tools. Used SOLIDWORKS for CAD and Fusion 360 for CAM.
 date: 2025-12-19 12:00 -0400
 categories: [Projects,ME]
-tags: [CAD, SOLIDWORKS, manufacturing, CNC, laser cutting]
+tags: [design, CAD, SOLIDWORKS, manufacturing, CNC, laser cutting]
 image:
   path: assets/posts/desk-organizer/final_pic_4.jpg
 ---
