@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Engineering Research Intern — Strengthening American Infrastructure Research 
-description: Structural Research Assistant at Bowen Laboratory, Purdue University
+description: Structural Research Assistant @ Bowen Laboratory, Purdue University
 abstract: Supported large-scale structural testing of and facilitated data collection, analysis, instrumentation, and test execution. Conducted literature survey to run OpenSeesPy FEA model and developed MATLAB application for data presentation.
 date: 2025-08-23 09:46 -0400
 categories: [Research, ME]

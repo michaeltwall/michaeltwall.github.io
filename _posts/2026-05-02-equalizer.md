@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Audio Equalizer Circuit Design
-description: Adjustable audio equalizer circuit design project.
+description: Adjustable Audio Equalizer Circuit Design Project
 abstract: Designed and built an analog 3-band audio equalizer using Sallen-Key active filters to meet strict design requirements. Designed and simulated circuit in LTSpice, and constructed and tested physical circuit.
 date: 2026-05-02 12:00 -0400
 categories: [Projects, ECE]

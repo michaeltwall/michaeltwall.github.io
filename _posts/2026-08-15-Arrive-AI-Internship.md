@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Electrical Engineering Internship
-description: Summer Internship @ drone delivery startup
-abstract: Developed quad-rail buck converter with power protection for drone delivery system; responsible for complete design and layout for manufacturing.
+description: PCB Design at Drone Delivery Startup
+abstract: Developed quad-rail buck converter with power protection for drone delivery system; responsible for complete end-to-end design and layout for manufacturing.
 date: 2026-08-15 12:00 -0400
 categories: [Internship]
 tags: [design, PCB, power systems, hardware, manufacturing, startup]
@@ -35,13 +35,13 @@ I was responsible for the following during the duration of the project:
 
 #### Concept Design
 
-![Concept Design Flowchart](/assets/posts/Arrive-AI-internship/Block_Diagram.jpg){: width="450"}
+![Concept Design Flowchart](/assets/posts/Arrive-AI-internship/Block_Diagram.jpg){: width="550"}
 
 Concept design involved a flowchart with main parts chosen. We compared different buck converters from various suppliers, and chose the Texas Instruments LMR516xx synchronous buck converter due to limited external component requirement, ideal current limiting options, and high efficiency.
 
 #### Schematic Design
 
-![5V rail schematic](/assets/posts/Arrive-AI-internship/PCB_Schematic_5V_Rail.jpg){: width="450"}
+![5V rail schematic](/assets/posts/Arrive-AI-internship/PCB_Schematic_5V_Rail.jpg){: width="550"}
 
 Once our flowchart was verified, we began schematic design in Altium Designer. This involved research of optimal design and protection systems, and Texas Instruments' online calculators and tools were very helpful for this step.
 
@@ -51,7 +51,7 @@ After validation, we selected appropriate manufacturer parts to meet all circuit
 
 #### PCB Layout
 
-![Final PCB layout](/assets/posts/Arrive-AI-internship/PCB_Layout.jpg){: width="450"}
+![Final PCB layout](/assets/posts/Arrive-AI-internship/PCB_Layout.jpg){: width="550"}
 
 With our schematics verified and all components picked, we moved on to PCB layout. The following criteria were used when creating the layout:
 
@@ -64,13 +64,11 @@ This process involved much trial and error and redesign to achieve an optimal de
 
 #### Manufacturing
 
-![Final PCB 3D render](/assets/posts/Arrive-AI-internship/PCB_3D_iso.png){: width="450"}
+![Final PCB 3D render](/assets/posts/Arrive-AI-internship/PCB_3D_iso.png){: width="550"}
 
 Finally, once our PCB design was validated, we were ready for manufacturing. Our chosen manufacturer was PCBWay.
 
-The complete board measured 132.5 x 112.5 mm (5.2" x 4.4"), and contained 104 total components.
-
-## Takeaways
+The complete board measures 132.5 x 112.5 mm (5.2" x 4.4") and contains 104 total components.
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Synthetic Data Generation for  Computer Vision Research
-description: Research @ Herreck Labs, Purdue University
+description: Computer Vision Research @ Herreck Labs, Purdue University
 abstract: Developed complete synthetic data generation pipeline to train computer-vision models. Collaborated with graduate researchers to integrate synthetic data into machine learning models, and am currently working on publishing a separate paper with advisor about the generation pipeline.
 date: 2026-05-12 12:00 -0400
 categories: [Research]
