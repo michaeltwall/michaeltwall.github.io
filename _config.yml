@@ -16,7 +16,7 @@ timezone: America/New_York
 
 title: Michael Wall #| Engineering Portfolio # the main title
 
-tagline: B.S. Electrical Engineering, Purdue University # it will display as the subtitle
+tagline: B.S. Electrical Engineering,<br>Purdue University # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   An engineering portfolio for Electrical Engineering undergrad Michael Wall
@@ -31,7 +31,7 @@ github:
 twitter:
   username: i_dont_have_twitter # change to your Twitter username
 
-social:
+social: 
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Michael Wall
