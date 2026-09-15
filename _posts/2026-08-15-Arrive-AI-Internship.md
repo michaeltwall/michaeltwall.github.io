@@ -18,7 +18,7 @@ In Summer of 2026, I completed an 11-week Electrical Engineering internship at A
 
 The goal of this project was to design a power supply PCB for use in Arrive AI's drone delivery system; it must be capable of supplying adequate power to all internal systems and be ready for manufacturing. The project specifications were as follows: 48V/10A supply voltage converted into four protected outputs at 48V/6A, 12V/3A, 5V/2A, and 3.3V/2A. We were responsible for everything from conception to manufacturing. 
 
-This project was completed with another Electrical Engineering intern, and we recieved guidance from the Senior Electrical Engineer, [Brad Sutton](https://www.linkedin.com/in/bradtsutton). The broad project constraints allowed room for experimentation and research in order to create the best solution.
+This project was completed with another Electrical Engineering intern, and we recieved guidance from  Senior Electrical Engineer [Brad Sutton](https://www.linkedin.com/in/bradtsutton). The broad project constraints allowed room for experimentation and research in order to create the best solution.
 
 ## My Role
 
@@ -43,9 +43,15 @@ Concept design involved a flowchart with main parts chosen. We compared differen
 
 ![5V rail schematic](/assets/posts/Arrive-AI-internship/PCB_Schematic_5V_Rail.jpg){: width="550"}
 
-Once our flowchart was verified, we began schematic design in Altium Designer. This involved research of optimal design and protection systems, and Texas Instruments' online calculators and tools were very helpful for this step.
+Once our flowchart was verified, we began schematic design in Altium Designer. This involved research of optimal design and protection systems, and Texas Instruments' online calculators and tools, including [TI's WEBENCH Power Designer](https://webench.ti.com/power-designer/), were very helpful for this step.
 
-PSPICE simulation tool was utilized to validate our design; steady state output, overcurrent, undercurrent, overvoltage, and undervoltage were all tested and verified to be functioning correctly.
+PSPICE simulation tool was utilized to validate our design; the following cases were tested to verify steady-state and fault response:
+- steady state output
+- overcurrent/undercurrent
+- overvoltage/undervoltage
+- supply transients (spikes)
+
+These faults were tested at the main inputs and after each converter, in order to test buck converters and eFuses and to simulate converter failure.
 
 After validation, we selected appropriate manufacturer parts to meet all circuit requirements.
 
@@ -70,5 +76,6 @@ Finally, once our PCB design was validated, we were ready for manufacturing. Our
 
 The complete board measures 132.5 x 112.5 mm (5.2" x 4.4") and contains 104 total components.
 
+*All designs present here have received approval before shareing.*
 
 
